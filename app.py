@@ -33,3 +33,14 @@ names.sort()#sorts a list in ascending manner
 print(names)
 names.pop()#removes the last list in an item
 print(names)
+hidden_game=10
+guess_count=0
+guess_limit=4
+while guess_count<guess_limit:#executes a set of statement if the condition is true
+    guess=int(input('Guess: '))
+    guess_count+=1
+    if guess==hidden_game:#used fr decision making
+        print('Yeeey you won!')
+        break#terminates a loop
+    else:#executes if the condition is false
+        print('hidden game over,TRY AGAIN')
