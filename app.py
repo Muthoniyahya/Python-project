@@ -1,27 +1,27 @@
-birth_year=input('Birth year:')
+birth_year=input('Birth year:')#input allows user to print
 print(type(birth_year))
 age=2021- int(birth_year)
 print(age)
 Course='Python for absolute beginners'
 print (Course.upper())#capitalizes the letters
 print(Course.startswith('B'))#returns a boolean
-course='''Hi Iman ,
+course=''''Hi Iman ,
 Here is your first python assignment 
 
 Thankyou,
 Python@lisalab.com
 
-'''
+'''''
 print(course)
 sentence='Python is a programming language'
 print(len(sentence))# shows length of an item in a list
 
-for fruits in("Apple","Mango","Banana","Avocado"):#used for iterating over a sequence
+for fruits in("Apple","Mango","Banana","Avocado"):#goes through every item in a list and prints in a new line
     print (fruits)
 matrix=[
     [1,2,3],
-    [4,5,6],
-    [7,8,9]
+    [10,20,30],
+    [100,200,1000]
 ]
 for row in matrix:
     for item in row:
@@ -33,14 +33,22 @@ names.sort()#sorts a list in ascending manner
 print(names)
 names.pop()#removes the last list in an item
 print(names)
-hidden_game=10
-guess_count=0
-guess_limit=4
-while guess_count<guess_limit:#executes a set of statement if the condition is true
-    guess=int(input('Guess: '))
-    guess_count+=1
-    if guess==hidden_game:#used fr decision making
-        print('Yeeey you won!')
-        break#terminates a loop
-    else:#executes if the condition is false
-        print('hidden game over,TRY AGAIN')
+
+riddle='what has a neck but no head?'
+concealed_riddle='shirt'
+riddle_record=0
+riddle_end=3
+while riddle_record < riddle_end: #executes a set of statement if the condition is true
+    riddle=str(input('take a shot at: '))
+    riddle_record+=1
+    if riddle==concealed_riddle: #used for decision making  #used for comparison
+         print('Yeeey fantastic')
+    else:
+        print('pass it to another peron')
+    #executes if a condition is not met
+
+
+
+
+
+
