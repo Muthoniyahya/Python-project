@@ -34,8 +34,8 @@ print(names)
 names.pop()#removes the last list in an item
 print(names)
 
-riddle='what has a neck but no head?'
-concealed_riddle='shirt'
+riddle='what has legs but does not have a body ?'
+concealed_riddle="trouser"
 riddle_record=0
 riddle_end=3
 while riddle_record < riddle_end: #executes a set of statement if the condition is true
@@ -43,9 +43,12 @@ while riddle_record < riddle_end: #executes a set of statement if the condition 
     riddle_record+=1
     if riddle==concealed_riddle: #used for decision making  #used for comparison
          print('Yeeey fantastic')
-    else:
-        print('pass it to another peron')
-    #executes if a condition is not met
+    else: #executes if a condition is met
+        print('pass it to another person')
+
+
+
+
 
 
 
